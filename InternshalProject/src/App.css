@@ -1,0 +1,282 @@
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+#hero{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(180deg, white , rgb(248, 199, 140));
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main img{
+  height: 15vh;  
+  /* width: 20vw; */
+  margin-bottom: 0.5vh;
+}
+
+#middle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left img{
+  padding-left: 5vw;
+  /* height: 45vh; */
+  /* width: 18vw; */
+  height: 80vh;
+  /* width: 28vw; */
+}
+
+#right{
+  width: 60vw;
+  padding-right: 2vw;
+}
+
+#right img{
+  height: 55vh;
+  width: 58vw;
+}
+
+#hero #centerP{
+  text-align: center;
+}
+
+
+#hero #lastImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero #lastImage img{
+  margin-top: 2vh;
+  width: 70vw;
+  /* height: 50vh; */
+  margin-bottom: 1vh;
+}
+
+hr{
+  background-color: red;
+  padding: 0.1vh;
+  width: 96%;
+}
+
+
+#hero span{
+  color: red;
+}
+
+#hero #footer-container{
+  margin-top: 3vh;
+  height: 12vh;
+  /* margin-bottom: 2vh; */
+  padding-bottom: 1.8vh;
+  /* background-color: rgba(190, 4, 4, 0.819); */
+}
+#hero #footer{
+  /* margin-top: 3vh; */
+  height: 13vh;
+  /* margin-bottom: 2vh; */
+  background-color: rgba(202, 4, 4, 0.753);
+}
+
+
+#footer {
+  box-sizing: border-box;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;  
+}
+
+#footer div{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+
+@media only screen and (max-width: 480px){
+#main img{
+  /* height: 10vh;   */
+  width: 45%;
+  height: 8vh;
+  margin-bottom: 0.5vh;
+}
+
+#hero{
+  /* margin: 0;
+  padding: 0;  */
+  box-sizing: border-box;
+  font-size: 7px;
+  background-image: linear-gradient(180deg, white , rgb(248, 199, 140));
+}
+
+#middle {
+  display: flex;
+  gap: 15px;
+}
+
+#left img{
+  height: 29vh;
+  width: 85%;
+}
+
+
+#right{
+  width: 90%;
+  /* padding-right: 2vw; */
+}
+
+#right img{
+  /* height: 5vh; */
+  padding-left: 12%;
+  width: 85%;
+  height: 100%;
+}
+
+#hero .img-above-text{
+  margin: 1vh 1.2vw;
+  font-size: 7px;
+  /* padding: 5px; */
+  padding: 15px 0 0 0;
+}
+
+#hero #lastImage img{
+  margin-top: 2vh;
+  width: 89%;
+  /* height: 30%; */
+  margin-bottom: 2vh;
+}
+
+#hero .img-text{
+  width: auto;
+  margin: 1vh 4%;
+  font-size: 6px;
+  font-weight: 400;
+  padding-bottom: 0.5vh;
+}
+
+.heading{
+  font-size: 7px;
+}
+
+.secondLast-text{
+  width: auto;
+  margin: 0 2%;
+  font-size: 6px;
+  font-weight: 400;
+}
+
+#hero #footer-container{
+  /* margin-top: 3vh; */
+  padding-bottom: 1vh;
+  height: 8vh;
+}
+
+#hero #footer{
+  height: 8vh;
+}
+
+#footer div :first-child {
+  width: 17px;
+}
+
+#footer div{
+  gap: 2px;
+}
+
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+ 
+  /* For portrait layouts only */
+
+  #main img{
+    /* height: 10vh;   */
+    /* width: 45%; */
+    margin-top: 1vh;
+    height: 7vh;
+    margin-bottom: 0.5vh;
+  }
+
+  #hero{
+    font-size: 13px;
+  }
+  #middle {
+    display: flex;
+    gap: 50px;
+  }
+  
+  #left img{
+    height: 35vh;
+    width: 88%;
+  }
+  
+  
+  #right{
+    width: 90%;
+    /* padding-right: 2vw; */
+  }
+  
+  #right img{
+    /* height: 5vh; */
+    padding-left: 5%;
+    width: 85%;
+    height: 100%;
+  }
+
+  #hero #lastImage img{
+    margin-top: 1vh;
+    width: 85%;
+    /* height: 80%; */
+    /* height: 30%; */
+    margin-bottom: 1vh;
+  }
+
+  #hero .img-text{
+    width: auto;
+    margin: 1vh 4%;
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 0.5vh;
+  }
+
+  .secondLast-text{
+    width: auto;
+    margin: 0 2%;
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  #hero #footer-container{
+    margin-top: 2vh;
+    height: 8vh;
+    padding-bottom: 1.8vh;
+  }
+  #hero #footer{
+    height: 9vh;
+    background-color: rgba(202, 4, 4, 0.753);
+  }
+
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+
+  #hero #footer{
+    background: #000;
+  }
+
+}
