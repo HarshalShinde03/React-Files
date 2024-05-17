@@ -45,6 +45,9 @@ import React from 'react'
 import { useState } from 'react';
 
 const App = () => {
+
+  // useCallback --> function
+  // useMemo --> string/number
   const [counter, setCounter] = useState(0);
   const [val, setVal] = useState(1);
   return (
