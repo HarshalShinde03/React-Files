@@ -41,28 +41,52 @@
 // export default App
 
 
-import React from 'react'
-import { useState } from 'react';
+// import React from 'react'
+// import { useState } from 'react';
 
-const App = () => {
+// const App = () => {
 
-  // useCallback --> function
-  // useMemo --> string/number
-  const [counter, setCounter] = useState(0);
-  const [val, setVal] = useState(1);
+//   // useCallback --> function
+//   // useMemo --> string/number
+//   const [counter, setCounter] = useState(0);
+//   const [val, setVal] = useState(1);
+//   return (
+//     <div>
+//       <input type="text"  onChange={(e)=>setVal(parseInt(e.target.value))}/>
+//       {console.log(val)}
+//       <br/>
+//       Sum is {(val * (val+1))/2}
+//       <br />
+
+//       <button onClick={function(){
+//         setCounter(counter + 1)
+//       }}>Counter ({counter})</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+import React, { useState,memo } from 'react'
+
+function App() {
+  const [count,setCount] = useState(0);
   return (
-    <div>
-      <input type="text"  onChange={(e)=>setVal(parseInt(e.target.value))}/>
-      {console.log(val)}
-      <br/>
-      Sum is {(val * (val+1))/2}
-      <br />
-
-      <button onClick={function(){
-        setCounter(counter + 1)
-      }}>Counter ({counter})</button>
+    <div>App <br />
+      <MemoComponent/>
+      <button onClick={()=>setCount(count+1)}>Count {count}</button>
     </div>
   )
 }
+
+const MemoComponent = memo(function Childcomponent(){
+  return(
+    <div>
+      {console.log('Child render')}
+      <button>Button pressed</button>
+  </div>
+  )
+} )
 
 export default App
